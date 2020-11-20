@@ -1,5 +1,5 @@
 name: learn-github-actions
-on: [build]
+on: [push]
 jobs:
   build-and-release:
     runs-on: ubuntu-latest
