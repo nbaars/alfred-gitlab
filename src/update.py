@@ -32,7 +32,7 @@ def main(wf):
     try:
         # Get API key from Keychain
         api_key = wf.get_password('gitlab_api_key')
-        api_url = wf.settings.get('api_url', 'https://gitlab.com/api/v4/projects')
+        api_url = wf.settings.get('api_url')
 
         # Retrieve projects from cache if available and no more than 600
         # seconds old
